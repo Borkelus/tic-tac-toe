@@ -1,0 +1,224 @@
+/*body {
+    font-family: 'Courier New', monospace;
+  }
+
+#heading{
+    font-size: 80px;
+    text-align: center;
+}
+
+p{
+    font-size: 35px;
+}
+
+#opponentContent{
+    position: relative;
+    text-align: right;
+}
+
+#valueContent,#whosTurn{
+    text-align: center;
+}
+
+#enterName,#name{
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: 24%;
+}
+
+#findPlayer{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: black;
+    font: bold;
+    color: azure;
+    padding: 10px;
+    border-radius: 99%;
+}
+
+#loading{
+    width: 175px;
+    display: block;
+    margin: auto;
+}
+
+#container{
+    max-width: 25%;
+    text-align: center;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    width: 25%;
+    margin: 0px;
+    padding: 50px;
+
+}*/
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #2b2b2b;
+    color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#heading {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4081;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+#userContent, #opponentContent {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #333333;
+    border: 2px solid #ff4081;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 28px;
+    position: relative;
+}
+
+#valueContent, #whosTurn {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff4081;
+}
+
+#enterName {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px;
+    width: 50%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #ff4081;
+    background: #444444;
+    color: #f8f8f8;
+    font-size: 28px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #ff4081;
+    background: #555555;
+    color: #f8f8f8;
+    font-size: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#findPlayer {
+    display: block;
+    margin: 20px auto;
+    background-color: #ff4081;
+    color: #f8f8f8;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#findPlayer:hover {
+    background-color: #ff79a9;
+    transform: scale(1.05);
+}
+
+#loading {
+    width: 175px;
+    display: block;
+    margin: 20px auto;
+}
+
+#bigContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: max-content;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #f8f8f8;
+    background-color: #444444;
+    border: 2px solid #ff4081;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #555555;
+    transform: scale(1.05);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background-color: #333333;
+    color: #888888;
+}
+
+@keyframes strikeout {
+    from {
+        background-color: #ff4081;
+    }
+    to {
+        background-color: #ff4081;
+        transform: scale(1.1);
+        color: white;
+    }
+}
+
+.strikeout {
+    animation: strikeout 0.5s ease-in-out forwards;
+}
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <h1 id="heading">Tic - Tac - Toe</h1>
+
+    <div>
+        <p id="userContent">You : <span id="user"></span></p>
+        <p id="opponentContent">Opponent : <span id="opponent"></span></p>
+    </div>
+    <br>
+    <p id="valueContent">Your symbol is : <span id="value"></span></p>
+    <br>
+    <p id="whosTurn">X's Turn</p>
+
+    <div>
+        <p id="enterName">Enter your username</p>
+        <input type="text" placeholder="Ex: - 123 or John" id="name" autocomplete="off" >
+    </div>
+    <button id="findPlayer">Search for an Opponent</button>
+    <img src="loading.gif" id="loading" alt="">
+
+    <div id="bigContainer">
+        <div id="container">
+            <button id="btn1" class="btn"></button>
+            <button id="btn2" class="btn"></button>
+            <button id="btn3" class="btn"></button>
+            <button id="btn4" class="btn"></button>
+            <button id="btn5" class="btn"></button>
+            <button id="btn6" class="btn"></button>
+            <button id="btn7" class="btn"></button>
+            <button id="btn8" class="btn"></button>
+            <button id="btn9" class="btn"></button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+</html>
